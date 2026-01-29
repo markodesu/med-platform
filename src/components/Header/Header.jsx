@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import Button from '../Button/Button';
 import LanguageSwitcher from '../LanguageSwitcher/LanguageSwitcher';
@@ -7,9 +7,24 @@ import './Header.css';
 
 const Header = () => {
   const { t } = useLanguage();
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const isScrolled = window.scrollY > 10;
+      if (isScrolled !== scrolled) {
+        setScrolled(isScrolled);
+      }
+    };
+
+    document.addEventListener('scroll', handleScroll, { passive: true });
+    return () => {
+      document.removeEventListener('scroll', handleScroll);
+    };
+  }, [scrolled]);
 
   return (
-    <header className="app-header">
+    <header className={`app-header ${scrolled ? 'scrolled' : ''}`}>
       <div className="header-container">
         <div className="logo">
           <Link to="/" className="logo-link">
@@ -53,7 +68,7 @@ const Header = () => {
         
         <div className="header-actions">
           <Button variant="primary" size="small">
-            {t('navigation.demo')}
+            {t('navigation.subscribe')}
           </Button>
           <LanguageSwitcher />
         </div>

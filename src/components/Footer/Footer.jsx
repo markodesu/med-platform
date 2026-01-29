@@ -25,8 +25,7 @@ const Footer = () => {
         </div>
         <div className="footer-section">
           <h3>{t('footer.contactUs')}</h3>
-          <p>Email: info@medicareconnect.com</p>
-          <p>{t('footer.phone')}: +1 (555) 123-4567</p>
+          <p>{t('contact.comingSoonMessage')}</p>
         </div>
       </div>
       <div className="footer-bottom">

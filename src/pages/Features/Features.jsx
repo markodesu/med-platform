@@ -1,4 +1,5 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 import { useLanguage } from '../../contexts/LanguageContext';
 import './Features.css';
 
@@ -7,30 +8,57 @@ const Features = () => {
   const features = [
     {
       icon: 'qr_code',
-      title: t('features.digitalCard.title'),
-      description: t('features.digitalCard.description')
+      image: '/WhatsApp Image 2026-01-29 at 15.48.53.jpeg',
+      title: t('features.qrMedicalPass.title'),
+      description: t('features.qrMedicalPass.description')
     },
     {
       icon: 'ai',
-      title: t('features.aiSymptom.title'),
-      description: t('features.aiSymptom.description')
-    },
-    {
-      icon: 'security',
-      title: t('features.secureData.title'),
-      description: t('features.secureData.description')
-    },
-    {
-      icon: 'video_call',
-      title: t('features.onlineConsultation.title'),
-      description: t('features.onlineConsultation.description')
+      image: '/WhatsApp Image 2026-01-29 at 15.48.53 (1).jpeg',
+      title: t('features.aiDiagnostic.title'),
+      description: t('features.aiDiagnostic.description')
     },
     {
       icon: 'emergency',
-      title: t('features.rapidStroke.title'),
-      description: t('features.rapidStroke.description')
+      image: '/WhatsApp Image 2026-01-29 at 15.48.53 (2).jpeg',
+      title: t('features.oneTouchSOS.title'),
+      description: t('features.oneTouchSOS.description')
+    },
+    {
+      icon: 'monitoring',
+      image: '/WhatsApp Image 2026-01-29 at 15.48.54.jpeg',
+      title: t('features.everywhereMonitoring.title'),
+      description: t('features.everywhereMonitoring.description')
+    },
+    {
+      icon: 'video_call',
+      image: '/WhatsApp Image 2026-01-29 at 15.48.53.jpeg',
+      title: t('features.smartConsultation.title'),
+      description: t('features.smartConsultation.description')
     }
   ];
+
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.15
+      }
+    }
+  };
+
+  const itemVariants = {
+    hidden: { opacity: 0, y: 30 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.5,
+        ease: 'easeOut'
+      }
+    }
+  };
 
   return (
     <div className="features-page">
@@ -45,9 +73,27 @@ const Features = () => {
 
       <section className="features-grid-section section">
         <div className="container">
-          <div className="features-grid">
+          <motion.div
+            className="features-grid"
+            variants={containerVariants}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: false, amount: 0.2 }}
+          >
             {features.map((feature, index) => (
-              <div key={index} className="feature-card">
+              <motion.div
+                key={index}
+                className="feature-card"
+                variants={itemVariants}
+                whileHover={{ y: -8, transition: { duration: 0.2 } }}
+              >
+                <div className="feature-image-container">
+                  <img
+                    src={feature.image}
+                    alt={feature.title}
+                    className="feature-image"
+                  />
+                </div>
                 <div className={`feature-icon ${feature.icon}`}>
                   {feature.icon === 'qr_code' && (
                     <svg viewBox="0 0 24 24">
@@ -59,9 +105,9 @@ const Features = () => {
                       <path d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M12,20A8,8 0 0,1 4,12A8,8 0 0,1 12,4A8,8 0 0,1 20,12A8,8 0 0,1 12,20M8.5,11A1.5,1.5 0 0,1 7,9.5A1.5,1.5 0 0,1 8.5,8A1.5,1.5 0 0,1 10,9.5A1.5,1.5 0 0,1 8.5,11M17,9.5A1.5,1.5 0 0,1 15.5,11A1.5,1.5 0 0,1 14,9.5A1.5,1.5 0 0,1 15.5,8A1.5,1.5 0 0,1 17,9.5M16,14V16H8V14H16Z" />
                     </svg>
                   )}
-                  {feature.icon === 'security' && (
+                  {feature.icon === 'monitoring' && (
                     <svg viewBox="0 0 24 24">
-                      <path d="M12,1L3,5V11C3,16.55 6.16,21.74 12,23C17.84,21.74 21,16.55 21,11V5L12,1M12,7A3,3 0 0,1 15,10A3,3 0 0,1 12,13A3,3 0 0,1 9,10A3,3 0 0,1 12,7M17,16.5C17,15 15.5,14 14,14H10C8.5,14 7,15 7,16.5V18H17V16.5Z" />
+                      <path d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M12,4A8,8 0 0,1 20,12A8,8 0 0,1 12,20A8,8 0 0,1 4,12A8,8 0 0,1 12,4M12,6A6,6 0 0,0 6,12A6,6 0 0,0 12,18A6,6 0 0,0 18,12A6,6 0 0,0 12,6M12,8A4,4 0 0,1 16,12A4,4 0 0,1 12,16A4,4 0 0,1 8,12A4,4 0 0,1 12,8Z" />
                     </svg>
                   )}
                   {feature.icon === 'video_call' && (
@@ -77,13 +123,13 @@ const Features = () => {
                 </div>
                 <h3>{feature.title}</h3>
                 <p>{feature.description}</p>
-              </div>
+              </motion.div>
             ))}
-          </div>
+          </motion.div>
         </div>
       </section>
 
-      <section className="cta-section bg-light">
+      <section className="cta-section">
         <div className="container">
           <div className="cta-content">
             <h2>{t('features.cta.title')}</h2>

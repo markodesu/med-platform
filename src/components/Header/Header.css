@@ -14,8 +14,31 @@
 }
 
 .app-header.scrolled {
-  background-color: rgba(26, 32, 44, 0.8);
-  backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.98);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+/* Update text and link colors when scrolled */
+.app-header.scrolled .nav-link,
+.app-header.scrolled .logo-link,
+.app-header.scrolled .logo-text {
+  color: #2D3748;
+}
+
+/* Add hover effect for better interaction */
+.app-header.scrolled .nav-link:hover {
+  color: #00C2CC;
+}
+
+/* Ensure language switcher is visible when scrolled */
+.app-header.scrolled .language-select {
+  color: #2D3748;
+  border-color: #E2E8F0;
+}
+
+.app-header.scrolled .language-select:hover {
+  border-color: #00C2CC;
 }
 
 .header-container {
