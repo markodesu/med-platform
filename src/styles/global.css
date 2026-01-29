@@ -1,30 +1,23 @@
 :root {
-  /* Color Palette */
-  --primary-color: #4a90e2;
-  --primary-dark: #3a7bc8;
-  --primary-light: #e8f1fc;
-  --secondary-color: #2c3e50;
-  --accent-color: #e74c3c;
-  --success-color: #2ecc71;
-  --warning-color: #f39c12;
-  --danger-color: #e74c3c;
-  
+  /* New Color Palette */
+  --primary-color: #00C2CC; /* Bright Cyan/Teal */
+  --primary-dark: #00AAB2;
+  --primary-light: #E0F8F9;
+  --secondary-color: #2A333A; /* Dark Slate Gray */
+  --accent-color: #FF6B6B;
+
   /* Neutral Colors */
   --white: #ffffff;
-  --gray-50: #f8f9fa;
+  --background-light: #F0FAFA;
   --gray-100: #f1f3f5;
   --gray-200: #e9ecef;
   --gray-300: #dee2e6;
-  --gray-400: #ced4da;
-  --gray-500: #adb5bd;
   --gray-600: #6c757d;
   --gray-700: #495057;
-  --gray-800: #343a40;
-  --gray-900: #212529;
   --black: #000000;
-  
+
   /* Typography */
-  --font-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   --font-mono: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
   
   /* Spacing */
@@ -78,9 +71,10 @@ html {
 body {
   margin: 0;
   font-family: var(--font-sans);
-  line-height: 1.5;
-  color: var(--gray-800);
-  background-color: var(--gray-50);
+  line-height: 1.6;
+  color: var(--secondary-color);
+  background-color: var(--background-light);
+  background-image: radial-gradient(circle at 10% 10%, var(--white) 0%, var(--background-light) 50%);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -88,9 +82,9 @@ body {
 /* Typography */
 h1, h2, h3, h4, h5, h6 {
   margin: 0 0 var(--spacing-md);
-  font-weight: 600;
-  line-height: 1.25;
-  color: var(--gray-900);
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--secondary-color);
 }
 
 h1 { font-size: 2.5rem; }
@@ -113,7 +107,6 @@ a {
 
 a:hover {
   color: var(--primary-dark);
-  text-decoration: underline;
 }
 
 /* Buttons */

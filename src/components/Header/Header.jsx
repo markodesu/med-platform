@@ -9,8 +9,11 @@ const Header = () => {
       <div className="header-container">
         <div className="logo">
           <Link to="/" className="logo-link">
-            <span className="logo-text">MediCare</span>
-            <span className="logo-connect">Connect</span>
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="16" cy="16" r="16" fill="#00C2CC"/>
+              <path d="M16 8C11.58 8 8 11.58 8 16C8 20.42 11.58 24 16 24C20.42 24 24 20.42 24 16C24 11.58 20.42 8 16 8ZM16 22C12.69 22 10 19.31 10 16C10 12.69 12.69 10 16 10C19.31 10 22 12.69 22 16C22 19.31 19.31 22 16 22Z" fill="white"/>
+            </svg>
+            <span className="logo-text">MediCare Connect</span>
           </Link>
         </div>
         
@@ -37,7 +40,7 @@ const Header = () => {
               </Link>
             </li>
             <li className="nav-item">
-              <Link to="/stroke-response" className="nav-link highlight">
+              <Link to="/stroke-response" className="nav-link">
                 Stroke Response
               </Link>
             </li>
@@ -45,11 +48,8 @@ const Header = () => {
         </nav>
         
         <div className="header-actions">
-          <Button variant="outline" size="small" className="login-btn">
-            Login
-          </Button>
-          <Button size="small" className="signup-btn">
-            Sign Up
+          <Button variant="primary" size="small">
+            Demo
           </Button>
         </div>
       </div>

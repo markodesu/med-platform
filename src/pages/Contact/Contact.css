@@ -4,10 +4,9 @@
 }
 
 .contact-hero {
-  background: linear-gradient(135deg, #4a90e2 0%, #2c3e50 100%);
-  color: white;
-  padding: 4rem 1rem;
   text-align: center;
+  padding: 4rem 1rem;
+  background-color: var(--primary-light);
 }
 
 .contact-hero h1 {
@@ -19,7 +18,7 @@
   font-size: 1.25rem;
   max-width: 800px;
   margin: 0 auto;
-  opacity: 0.9;
+  color: var(--gray-700);
 }
 
 .contact-content {
@@ -36,11 +35,9 @@
 .contact-info h2,
 .contact-form h2 {
   margin-bottom: 1.5rem;
-  color: var(--gray-900);
 }
 
 .contact-info p {
-  color: var(--gray-700);
   margin-bottom: 2rem;
   line-height: 1.7;
 }
@@ -72,12 +69,10 @@
 
 .info-text h4 {
   margin: 0 0 0.25rem;
-  color: var(--gray-900);
 }
 
 .info-text p {
   margin: 0;
-  color: var(--gray-600);
 }
 
 .contact-form {
@@ -95,7 +90,6 @@
   display: block;
   margin-bottom: 0.5rem;
   font-weight: 500;
-  color: var(--gray-800);
 }
 
 .form-group input,
@@ -136,19 +130,10 @@
   border: none;
 }
 
-/* Responsive Design */
 @media (max-width: 992px) {
   .contact-grid {
     grid-template-columns: 1fr;
     gap: 2rem;
-  }
-  
-  .contact-info {
-    order: 2;
-  }
-  
-  .contact-form {
-    order: 1;
   }
 }
 
