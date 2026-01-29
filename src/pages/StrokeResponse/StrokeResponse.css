@@ -132,13 +132,13 @@
 
 .step-content h4 {
   margin: 0 0 0.5rem 0;
-  color: #333;
+  color: white;
   font-size: 1.2rem;
 }
 
 .step-content p {
   margin: 0;
-  color: #666;
+  color: #e0e0e0;
   line-height: 1.6;
 }
 
@@ -170,7 +170,7 @@
 }
 
 .card-sample h4 {
-  color: #333;
+  color: white;
   margin-top: 0;
   margin-bottom: 1.5rem;
   font-size: 1.5rem;
@@ -190,7 +190,7 @@
   padding: 1rem;
   border-radius: 8px;
   font-size: 0.95rem;
-  color: #444;
+  color: white;
 }
 
 .card-features strong {
@@ -781,9 +781,14 @@
   margin-bottom: 1.5rem;
 }
 
+.card-preview-text h3 {
+  color: white;
+}
+
 .card-preview-text p {
   margin-bottom: 2rem;
   line-height: 1.7;
+  color: white;
 }
 
 .card-features {

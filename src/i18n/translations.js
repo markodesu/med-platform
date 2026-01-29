@@ -149,7 +149,7 @@ export default {
       },
     },
     about: {
-      heroTitle: 'QR Medical ID',
+      heroTitle: 'Stroke Network',
       heroSubtitle: 'Instant access to critical health information when seconds count',
       missionTitle: 'Our Mission',
       missionDescription: 'Born from comprehensive research in Kyrgyz hospitals, Stroke Network addresses critical gaps in stroke care coordination. Our fast-tracking system and AI integration enable faster treatment decisions, connecting healthcare networks and improving patient outcomes through real-time collaboration.',
