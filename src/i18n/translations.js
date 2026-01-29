@@ -1,5 +1,80 @@
 export default {
   en: {
+    stroke: {
+      benefits: {
+        title: 'Key Benefits of Our Stroke Response System',
+        benefit1: 'Immediate access to critical medical information',
+        benefit2: 'Reduced time to treatment',
+        benefit3: 'Improved communication between healthcare providers',
+        benefit4: 'Enhanced patient outcomes',
+        benefit5: 'Secure and HIPAA-compliant data handling'
+      },
+      cta: {
+        title: 'Get Started with Stroke Response',
+        description: 'Join our network of healthcare providers and improve stroke care today.',
+        getQR: 'Get QR Code',
+        learnMore: 'How It Works'
+      },
+      chatbot: {
+        title: 'Need Help? Chat with Our AI Assistant',
+        description: 'Our AI assistant is available 24/7 to answer your questions about stroke response and patient care.'
+      },
+      card: {
+        name: 'Full Name',
+        dob: 'Date of Birth',
+        bloodType: 'Blood Type',
+        emergencyContact: 'Emergency Contact',
+        medicalConditions: 'Medical Conditions',
+        medications: 'Current Medications',
+        allergies: 'Known Allergies',
+        sample: {
+          name: 'Alex Johnson',
+          dob: 'March 15, 1978',
+          bloodType: 'O+',
+          emergencyContact: 'Sarah Johnson (Spouse) - (555) 987-6543',
+          medicalConditions: 'High Blood Pressure, History of Stroke',
+          medications: 'Aspirin 81mg daily, Atorvastatin 20mg at night',
+          allergies: 'Penicillin, Shellfish'
+        }
+      }
+    },
+    qrCard: {
+      title: 'QR Medical ID',
+      description: 'Instant health access when seconds count',
+      whatIsTitle: 'Your Medical ID, Instantly',
+      whatIsContent: 'A QR code that gives first responders immediate access to your critical health information during emergencies.',
+      features: {
+        title: 'Key Benefits',
+        items: [
+          'Instant access to medical history',
+          'Works without internet',
+          'Secure & private',
+          'Easy to update',
+          'Saves critical time'
+        ]
+      },
+      howItWorks: {
+        title: '3 Simple Steps to Safety',
+        steps: [
+          '1. Create your health profile',
+          '2. Generate QR code',
+          '3. Print or save to phone',
+          'Ready for emergencies!'
+        ]
+      },
+      benefits: {
+        title: 'Critical for Stroke Patients',
+        items: [
+          'Speeds up emergency response',
+          'Shows blood thinners usage',
+          'Lists critical medications',
+          'Emergency contacts ready',
+          'Saves precious minutes'
+        ]
+      },
+      getStarted: 'Get Your QR Card',
+      learnMore: 'Learn More'
+    },
     app: {
       title: 'Stroke Network',
     },
@@ -74,8 +149,8 @@ export default {
       },
     },
     about: {
-      heroTitle: 'About Stroke Network',
-      heroSubtitle: 'A collaborative project by students from University of Central Asia, Soonchunhyang University, and International University of Kyrgyzstan. Through extensive research in Kyrgyz hospitals, we developed innovative solutions for fast-tracking stroke treatment and AI integration.',
+      heroTitle: 'QR Medical ID',
+      heroSubtitle: 'Instant access to critical health information when seconds count',
       missionTitle: 'Our Mission',
       missionDescription: 'Born from comprehensive research in Kyrgyz hospitals, Stroke Network addresses critical gaps in stroke care coordination. Our fast-tracking system and AI integration enable faster treatment decisions, connecting healthcare networks and improving patient outcomes through real-time collaboration.',
       missionDetail: 'Our research revealed significant delays in stroke treatment coordination across Kyrgyz hospitals. We developed this platform to bridge the gap between hospitals, specialists, and emergency services, ensuring that every second counts when treating stroke patients. Our AI-powered solutions help healthcare providers make faster, more accurate decisions.',
@@ -151,6 +226,43 @@ export default {
     },
   },
   ru: {
+    qrCard: {
+      title: 'QR-карта при инсульте',
+      description: 'Умное решение для мгновенного доступа к важной медицинской информации в чрезвычайных ситуациях.',
+      whatIsTitle: 'Что такое QR-карта при инсульте?',
+      whatIsContent: 'QR-код, который предоставляет мгновенный доступ к вашей важной медицинской информации при сканировании службами экстренной помощи или медицинскими работниками.',
+      features: {
+        title: 'Ключевые особенности',
+        items: [
+          'Хранит важную медицинскую информацию',
+          'Быстрый доступ в чрезвычайных ситуациях',
+          'Работает оффлайн с резервной копией vCard',
+          'Безопасно и конфиденциально',
+          'Легко обновлять'
+        ]
+      },
+      howItWorks: {
+        title: 'Как это работает',
+        steps: [
+          'Создайте защищенный профиль с вашей медицинской информацией',
+          'Сгенерируйте уникальный QR-код',
+          'Распечатайте его на карте или сохраните в телефоне',
+          'Экстренные службы могут отсканировать его для доступа к вашей информации'
+        ]
+      },
+      benefits: {
+        title: 'Почему это важно для пациентов с инсультом',
+        items: [
+          'Обеспечивает мгновенный доступ к истории болезни',
+          'Помогает выявить использование разжижителей крови',
+          'Указывает аллергии и лекарства',
+          'Содержит контакты для экстренных случаев',
+          'Экономит критическое время во время лечения'
+        ]
+      },
+      getStarted: 'Получить QR-карту',
+      learnMore: 'Узнать больше'
+    },
     app: {
       title: 'Stroke Network',
     },
@@ -302,6 +414,43 @@ export default {
     },
   },
   ky: {
+    qrCard: {
+      title: 'Инсульт QR картасы',
+      description: 'Тез жардам көрсөтүү учурунда маанилүү медициналык маалыматка тез жетүү үчүн акылдуу чечим.',
+      whatIsTitle: 'Инсульт QR картасы деген эмне?',
+      whatIsContent: 'Тезинен жардам көрсөтүү кызматтары же медициналык кызматкерлер тарабынан сканерленгенде сиздин маанилүү медициналык маалыматыңызга тез жетүү мүмкүнчүлүгүн берген QR-код.',
+      features: {
+        title: 'Негизги өзгөчөлүктөрү',
+        items: [
+          'Маанилүү медициналык маалыматтарды сактайт',
+          'Тез жардам керек учурда тез жетүү',
+          'vCard резервдик көчүрмөсү менен интернетсиз иштейт',
+          'Коопсуз жана жеке',
+          'Жеңил жаңыртуу'
+        ]
+      },
+      howItWorks: {
+        title: 'Ал кандайча иштейт',
+        steps: [
+          'Медициналык маалыматыңыз менен коопсуз профил түзүңүз',
+          'Өзгөчө QR-кодуңузду түзүңүз',
+          'Аны картага басып чыгарыңыз же телефонуңузга сактаңыз',
+          'Тезинен жардам көрсөтүү кызматтары сиздин маалыматыңызга жетүү үчүн аны сканерлей алышат'
+        ]
+      },
+      benefits: {
+        title: 'Эмне үчүн бул инсульт оорулуулары үчүн маанилүү',
+        items: [
+          'Оорунун тарыхына тез жетүү мүмкүнчүлүгүн берет',
+          'Канны суюлтуучу дарыларды колдонууну аныктоого жардам берет',
+          'Аллергияларды жана дары-дармектерди көрсөтөт',
+          'Тез жардам үчүн байланыш маалыматтарын камтыйт',
+          'Дарылоо убагында өтө маанилүү убакытты үнөмдөйт'
+        ]
+      },
+      getStarted: 'QR картаны алуу',
+      learnMore: 'Кененирээк маалымат'
+    },
     app: {
       title: 'Stroke Network',
     },
@@ -453,6 +602,43 @@ export default {
     },
   },
   ko: {
+    qrCard: {
+      title: '뇌졸중 QR 카드',
+      description: '응급 상황에서 중요한 건강 정보에 즉시 접근할 수 있는 스마트한 솔루션입니다.',
+      whatIsTitle: '뇌졸중 QR 카드란?',
+      whatIsContent: '응급 의료진이나 의료진이 스캔할 때 중요한 건강 정보에 즉시 접근할 수 있는 QR 코드입니다.',
+      features: {
+        title: '주요 기능',
+        items: [
+          '중요한 건강 정보 저장',
+          '응급 상황에서 빠른 접근',
+          'vCard 백업으로 오프라인 작동',
+          '안전하고 비공개',
+          '쉽게 업데이트 가능'
+        ]
+      },
+      howItWorks: {
+        title: '작동 방식',
+        steps: [
+          '건강 정보로 보안 프로필 생성',
+          '고유한 QR 코드 생성',
+          '카드에 인쇄하거나 휴대폰에 저장',
+          '응급 의료진이 정보에 접근하기 위해 스캔 가능'
+        ]
+      },
+      benefits: {
+        title: '뇌졸중 환자에게 중요한 이유',
+        items: [
+          '병력에 즉시 접근 가능',
+          '혈액 희석제 사용 식별 지원',
+          '알레르기 및 복용 중인 약물 목록',
+          '비상 연락처 포함',
+          '치료 중 소중한 시간 절약'
+        ]
+      },
+      getStarted: 'QR 카드 받기',
+      learnMore: '자세히 알아보기'
+    },
     app: {
       title: 'Stroke Network',
     },
