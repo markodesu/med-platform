@@ -1,6 +1,7 @@
+
 .app-header {
   background-color: transparent;
-  border-bottom: 1px solid var(--gray-200);
+  border-bottom: 1px solid var(--gray-700);
   position: fixed;
   top: 0;
   left: 0;
@@ -13,7 +14,7 @@
 }
 
 .app-header.scrolled {
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(26, 32, 44, 0.8);
   backdrop-filter: blur(10px);
 }
 
@@ -34,7 +35,7 @@
   text-decoration: none;
   font-size: 1.25rem;
   font-weight: 600;
-  color: var(--secondary-color);
+  color: var(--white);
 }
 
 .logo-text {
@@ -59,7 +60,7 @@
 
 .nav-link {
   text-decoration: none;
-  color: var(--secondary-color);
+  color: var(--white);
   font-weight: 500;
   padding: 0.5rem 1rem;
   transition: color 0.2s ease;

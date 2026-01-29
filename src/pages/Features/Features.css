@@ -6,19 +6,20 @@
 .features-hero {
   text-align: center;
   padding: 4rem 1rem;
-  background-color: var(--primary-light);
+  background-color: var(--background-light);
 }
 
 .features-hero h1 {
   font-size: 2.5rem;
   margin-bottom: 1rem;
+  color: var(--white);
 }
 
 .features-hero .subtitle {
   font-size: 1.25rem;
   max-width: 800px;
   margin: 0 auto;
-  color: var(--gray-700);
+  color: var(--gray-300);
 }
 
 .features-grid-section {
@@ -33,7 +34,7 @@
 }
 
 .feature-card {
-  background: white;
+  background: #2D3748;
   border-radius: var(--radius-lg);
   padding: 2rem;
   box-shadow: var(--shadow-sm);
@@ -75,7 +76,7 @@
 .cta-section {
   padding: 4rem 1rem;
   text-align: center;
-  background-color: var(--background-light);
+  background-color: #2D3748;
 }
 
 .cta-content {
