@@ -1,0 +1,54 @@
+/* Not Found Page Styles */
+.not-found {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1rem;
+  text-align: center;
+  background-color: var(--gray-50);
+}
+
+.not-found-content {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 3rem 2rem;
+  background: white;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+}
+
+.not-found h1 {
+  font-size: 8rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  line-height: 1;
+  margin-bottom: 1rem;
+}
+
+.not-found h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: var(--gray-900);
+}
+
+.not-found p {
+  color: var(--gray-600);
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.not-found .btn {
+  min-width: 200px;
+}
+
+/* Responsive Design */
+@media (max-width: 576px) {
+  .not-found h1 {
+    font-size: 6rem;
+  }
+
+  .not-found h2 {
+    font-size: 1.5rem;
+  }
+}

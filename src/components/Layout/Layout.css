@@ -1,0 +1,39 @@
+.app-layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  background-color: #f8f9fa;
+}
+
+.main-content {
+  flex-grow: 1;
+  padding-top: 70px; /* Account for fixed header */
+  background-color: #fff;
+}
+
+/* Ensure proper spacing for the content */
+main > *:first-child {
+  padding-top: 2rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .main-content {
+    padding-top: 60px; /* Slightly less padding on mobile */
+  }
+  
+  main > *:first-child {
+    padding-top: 1.5rem;
+  }
+}
+
+/* Print styles */
+@media print {
+  .app-layout {
+    background-color: white;
+  }
+  
+  .main-content {
+    padding-top: 0;
+  }
+}
