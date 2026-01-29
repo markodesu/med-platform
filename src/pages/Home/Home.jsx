@@ -83,7 +83,24 @@ const Home = () => {
       >
         <div className="hero-content">
           <motion.div className="hero-text" variants={heroTextVariants}>
-            <h1>{t('home.heroTitle')}</h1>
+            <h1>
+              {t('home.heroTitle').split('\\n').map((line, i) => {
+                // Split line and highlight key words
+                const parts = line.split(/(\bwait\b|\bwon't hurt\b|\bdoesn't hurt\b|\btoo late\b)/gi);
+                return (
+                  <span key={i}>
+                    {parts.map((part, idx) => 
+                      /^(wait|won't hurt|doesn't hurt|too late)$/i.test(part) ? (
+                        <span key={idx} style={{ color: '#FF6B6B' }}>{part}</span>
+                      ) : (
+                        <span key={idx}>{part}</span>
+                      )
+                    )}
+                    {i < t('home.heroTitle').split('\\n').length - 1 && <br />}
+                  </span>
+                );
+              })}
+            </h1>
             <p>{t('home.heroDescription')}</p>
             <Button variant="primary" size="large">{t('home.subscribe')}</Button>
           </motion.div>

@@ -87,8 +87,8 @@ export default {
       subscribe: 'Subscribe',
     },
     home: {
-      heroTitle: 'Connecting Networks to Facilitate Faster Treatment',
-      heroDescription: 'The Stroke Network mobile app allows physicians to quickly and securely access, review and share images and patient data across a network, send messages, make calls directly from the app, and flag patients eligible for thrombectomy, all designed to optimize workflow, facilitating faster transfer and treatment decisions.',
+      heroTitle: 'The brain doesn\'t hurt.\\nSo people wait.\\nIn stroke, waiting is what makes it too late.',
+      heroDescription: 'Every second counts in stroke care. Stroke Network enables physicians to quickly and securely access, review and share images and patient data across a network, send messages, make calls directly, and flag patients eligible for thrombectomy. Optimize workflow, facilitate faster transfers, and save lives through rapid treatment decisions.',
       subscribe: 'Subscribe',
       screenshotsTitle: 'See Stroke Network in Action',
       screenshotsSubtitle: 'Discover how our platform streamlines stroke care coordination and accelerates critical treatment decisions.',
@@ -275,8 +275,8 @@ export default {
       subscribe: 'Подписаться',
     },
     home: {
-      heroTitle: 'Соединяя сети для ускорения лечения',
-      heroDescription: 'Мобильное приложение Stroke Network позволяет врачам быстро и безопасно получать доступ, просматривать и обмениваться изображениями и данными пациентов в сети, отправлять сообщения, совершать звонки прямо из приложения и отмечать пациентов, имеющих право на тромбэктомию, все это предназначено для оптимизации рабочего процесса, облегчения более быстрой передачи и принятия решений о лечении.',
+      heroTitle: 'Мозг не болит.\\nПоэтому люди ждут.\\nПри инсульте ожидание - это то, что делает слишком поздно.',
+      heroDescription: 'Каждая секунда имеет значение при лечении инсульта. Stroke Network позволяет врачам быстро и безопасно получать доступ, просматривать и обмениваться изображениями и данными пациентов в сети, отправлять сообщения, совершать звонки напрямую и отмечать пациентов, имеющих право на тромбэктомию. Оптимизируйте рабочий процесс, облегчите более быстрые передачи и спасайте жизни благодаря быстрым решениям о лечении.',
       subscribe: 'Подписаться',
       screenshotsTitle: 'Stroke Network в действии',
       screenshotsSubtitle: 'Узнайте, как наша платформа оптимизирует координацию лечения инсульта и ускоряет принятие критических решений о лечении.',
@@ -463,8 +463,8 @@ export default {
       subscribe: 'Жазылуу',
     },
     home: {
-      heroTitle: 'Дарылоону тездетүү үчүн тармактарды туташтыруу',
-      heroDescription: 'Stroke Network мобилдик тиркемеси дарыгерлерге тармак боюнча сүрөттөрдү жана пациенттердин маалыматтарын тез жана коопсуз алууга, карап чыгууга жана бөлүшүүгө, билдирүүлөрдү жөнөтүүгө, түздөн-түз колдонмодон чалууларды жасоого жана тромбэктомияга жарамдуу пациенттерди белгилөөгө мүмкүндүк берет, мунун баары жумуш процессин оптималдаштырууга, тезирээк өткөрүп берүүнү жана дарылоо чечимдерин кабыл алууну жеңилдетүүгө багытталган.',
+      heroTitle: 'Миңгесинин ооруусу жок.\\nОнол адамдар күтүшөө.\\nИнсультту жагда күтүш - арбисти өтө кечке тиребити осо.',
+      heroDescription: 'Инсульт ухаалары болгондо ар бир секунда маанилүү. Stroke Network дарыгерлерге тармак боюнча сүрөттөрдү жана пациенттердин маалыматтарын тез жана коопсуз алууга, карап чыгууга жана бөлүшүүгө, билдирүүлөрдү жөнөтүүгө, түздөн-түз чалууларды жасоого жана тромбэктомияга жарамдуу пациенттерди белгилөөгө мүмкүндүк берет. Жумуш процессин оптималдаштырыңыз, тезирээк өткөрүп берүүнү жеңилдетиңиз жана тез дарылоо чечимдери аркылуу жандарды сактаңыз.',
       subscribe: 'Жазылуу',
       screenshotsTitle: 'Stroke Network иштелип жатканда',
       screenshotsSubtitle: 'Биздин платформа инсультти дарылоону координациялоону кантип жакшыртарын жана маанилүү дарылоо чечимдерин кантип тездетээрин билиңиз.',
@@ -651,8 +651,8 @@ export default {
       subscribe: '구독',
     },
     home: {
-      heroTitle: '더 빠른 치료를 위해 네트워크 연결',
-      heroDescription: 'Stroke Network 모바일 앱을 사용하면 의사가 네트워크 전체에서 이미지 및 환자 데이터에 빠르고 안전하게 액세스, 검토 및 공유하고, 앱에서 직접 메시지를 보내고, 전화를 걸고, 혈전 제거술 대상 환자를 표시하여 워크플로를 최적화하고 더 빠른 전송 및 치료 결정을 내릴 수 있습니다.',
+      heroTitle: '뇌가 아프지 않아요.\\n그래서 사람들은 기다려요.\\n뇌졸중에서는 기다리는 것이 너무 늦게 만드는 거예요.',
+      heroDescription: '뇌졸중 치료에서는 모든 초가 중요합니다. Stroke Network를 사용하면 의사가 네트워크 전체에서 이미지 및 환자 데이터에 빠르고 안전하게 액세스, 검토 및 공유하고, 메시지를 보내고, 직접 전화를 걸고, 혈전 제거술 대상 환자를 표시하여 워크플로를 최적화하고 더 빠른 전송을 용이하게 하며 신속한 치료 결정으로 생명을 구할 수 있습니다.',
       subscribe: '구독',
       screenshotsTitle: 'Stroke Network 작동 방식',
       screenshotsSubtitle: '우리 플랫폼이 뇌졸중 치료 조정을 간소화하고 중요한 치료 결정을 가속화하는 방법을 알아보세요.',
