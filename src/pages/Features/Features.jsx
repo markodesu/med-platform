@@ -1,32 +1,34 @@
 import React from 'react';
+import { useLanguage } from '../../contexts/LanguageContext';
 import './Features.css';
 
 const Features = () => {
+  const { t } = useLanguage();
   const features = [
     {
       icon: 'qr_code',
-      title: 'Digital Medical Card',
-      description: 'Access your medical records anytime, anywhere with a secure QR code'
+      title: t('features.digitalCard.title'),
+      description: t('features.digitalCard.description')
     },
     {
       icon: 'ai',
-      title: 'AI Symptom Analysis',
-      description: 'Get preliminary health insights using our AI-powered symptom checker'
+      title: t('features.aiSymptom.title'),
+      description: t('features.aiSymptom.description')
     },
     {
       icon: 'security',
-      title: 'Secure Data Storage',
-      description: 'Your medical data is encrypted and stored with the highest security standards'
+      title: t('features.secureData.title'),
+      description: t('features.secureData.description')
     },
     {
       icon: 'video_call',
-      title: 'Online Doctor Consultation',
-      description: 'Connect with healthcare professionals from the comfort of your home'
+      title: t('features.onlineConsultation.title'),
+      description: t('features.onlineConsultation.description')
     },
     {
       icon: 'emergency',
-      title: 'Rapid Stroke Response',
-      description: 'Immediate emergency information for stroke patients through QR codes'
+      title: t('features.rapidStroke.title'),
+      description: t('features.rapidStroke.description')
     }
   ];
 
@@ -34,9 +36,9 @@ const Features = () => {
     <div className="features-page">
       <section className="features-hero">
         <div className="container">
-          <h1>Our Features</h1>
+          <h1>{t('features.heroTitle')}</h1>
           <p className="subtitle">
-            Discover how our platform can help you manage your health better
+            {t('features.heroSubtitle')}
           </p>
         </div>
       </section>
@@ -84,16 +86,16 @@ const Features = () => {
       <section className="cta-section bg-light">
         <div className="container">
           <div className="cta-content">
-            <h2>Ready to get started?</h2>
+            <h2>{t('features.cta.title')}</h2>
             <p>
-              Join thousands of users who trust us with their healthcare needs.
+              {t('features.cta.description')}
             </p>
             <div className="cta-buttons">
               <a href="/signup" className="btn btn-primary">
-                Sign Up Now
+                {t('features.cta.signUp')}
               </a>
               <a href="/contact" className="btn btn-outline">
-                Contact Us
+                {t('features.cta.contactUs')}
               </a>
             </div>
           </div>

@@ -1,42 +1,44 @@
 import React from 'react';
 import Chatbot from '../../components/Chatbot/Chatbot';
+import { useLanguage } from '../../contexts/LanguageContext';
 import './StrokeResponse.css';
 
 const StrokeResponse = () => {
+  const { t } = useLanguage();
   const steps = [
     {
       icon: 'qr_code',
-      title: 'QR Emergency Cards for High-Risk Patients',
-      description: 'High-risk patients receive a personalized emergency card with a QR code containing their critical medical information.'
+      title: t('stroke.steps.qr.title'),
+      description: t('stroke.steps.qr.description')
     },
     {
       icon: 'scanner',
-      title: 'Quick Scan by EMTs',
-      description: 'Emergency medical technicians can quickly scan the QR code to access vital patient information during an emergency.'
+      title: t('stroke.steps.scan.title'),
+      description: t('stroke.steps.scan.description')
     },
     {
       icon: 'timer',
-      title: 'Golden Hour Protection',
-      description: 'Immediate access to medical history and emergency contacts helps secure the critical first hour of stroke treatment.'
+      title: t('stroke.steps.goldenHour.title'),
+      description: t('stroke.steps.goldenHour.description')
     }
   ];
 
   const emergencyCardData = {
-    name: 'Name',
-    dob: 'Date of Birth',
-    bloodType: 'Blood Type',
-    emergencyContact: 'Emergency Contact',
-    medicalConditions: 'Medical Conditions',
-    medications: 'Current Medications',
-    allergies: 'Allergies'
+    name: t('stroke.card.name'),
+    dob: t('stroke.card.dob'),
+    bloodType: t('stroke.card.bloodType'),
+    emergencyContact: t('stroke.card.emergencyContact'),
+    medicalConditions: t('stroke.card.medicalConditions'),
+    medications: t('stroke.card.medications'),
+    allergies: t('stroke.card.allergies')
   };
 
   const benefits = [
-    'Immediate access to critical patient information',
-    'Reduced response time in emergencies',
-    'Improved accuracy of medical history',
-    'Direct communication with emergency contacts',
-    'Seamless integration with hospital systems'
+    t('stroke.benefits.benefit1'),
+    t('stroke.benefits.benefit2'),
+    t('stroke.benefits.benefit3'),
+    t('stroke.benefits.benefit4'),
+    t('stroke.benefits.benefit5')
   ];
 
   return (
@@ -44,19 +46,15 @@ const StrokeResponse = () => {
       {/* Hero Section */}
       <section className="stroke-hero">
         <div className="container">
-          <h1>Rapid Stroke Response System</h1>
-          <p className="subtitle">
-            Saving Lives Through Quick Emergency Response
-          </p>
+          <h1>{t('stroke.heroTitle')}</h1>
+          <p className="subtitle">{t('stroke.heroSubtitle')}</p>
         </div>
       </section>
 
       {/* How It Works Section */}
       <section className="how-it-works section">
         <div className="container">
-          <h2 className="text-center">
-            How It Works
-          </h2>
+          <h2 className="text-center">{t('stroke.howItWorks')}</h2>
           <div className="steps-container">
             {steps.map((step, index) => (
               <div key={index} className="step">
@@ -91,10 +89,8 @@ const StrokeResponse = () => {
         <div className="container">
           <div className="card-preview-content">
             <div className="card-preview-text">
-              <h2>Emergency Medical Information</h2>
-              <p>
-                Each high-risk patient receives a personalized emergency card with a QR code that contains their critical medical information.
-              </p>
+              <h2>{t('stroke.card.title')}</h2>
+              <p>{t('stroke.card.description')}</p>
               <ul className="card-features">
                 {Object.entries(emergencyCardData).map(([key, label]) => (
                   <li key={key}>
@@ -111,12 +107,12 @@ const StrokeResponse = () => {
                       <path d="M19,3H5C3.89,3 3,3.89 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5C21,3.89 20.1,3 19,3M19,19H5V5H19V19M17,8H16V16H15V8H14V16H13V8H12V16H11V8H10V16H9V8H8V16H7V8H6V16H5V8H4V16H3V8H2V16H1V8H0V16H1V19H3V17H5V19H7V17H9V19H11V17H13V19H15V17H17V19H19V17H21V19H23V16H24V8H23V5H21V8H19V5H17V8Z" />
                     </svg>
                   </div>
-                  <h3>Emergency Medical Information</h3>
+                  <h3>{t('stroke.card.title')}</h3>
                 </div>
                 <div className="qr-code-placeholder">
                   <div className="qr-code">
                     <div className="qr-pattern"></div>
-                    <div className="qr-text">SCAN IN EMERGENCY</div>
+                    <div className="qr-text">{t('stroke.card.scan')}</div>
                   </div>
                 </div>
                 <div className="card-details">
@@ -136,7 +132,7 @@ const StrokeResponse = () => {
                     <svg viewBox="0 0 24 24">
                       <path d="M12,2L1,21H23M12,6L19.5,19.5H4.5M11,10V14H13V10M11,16V18H13V16" />
                     </svg>
-                    <span>HYPERTENSION PATIENT! STROKE SUSPECTED!</span>
+                    <span>{t('stroke.card.notice')}</span>
                   </div>
                 </div>
               </div>
@@ -148,9 +144,7 @@ const StrokeResponse = () => {
       {/* Benefits Section */}
       <section className="benefits-section section">
         <div className="container">
-          <h2 className="text-center">
-            Key Benefits
-          </h2>
+          <h2 className="text-center">{t('stroke.benefits.title')}</h2>
           <div className="benefits-grid">
             {benefits.map((benefit, index) => (
               <div key={index} className="benefit-card">
@@ -170,14 +164,14 @@ const StrokeResponse = () => {
       <section className="cta-section section bg-primary">
         <div className="container">
           <div className="cta-content">
-            <h2>Ready to Get Started?</h2>
-            <p>Sign up now to get your personalized emergency QR code and peace of mind.</p>
+            <h2>{t('stroke.cta.title')}</h2>
+            <p>{t('stroke.cta.description')}</p>
             <div className="cta-buttons">
               <button className="btn btn-light">
-                Get Your QR Code
+                {t('stroke.cta.getQr')}
               </button>
               <button className="btn btn-outline-light">
-                Learn More
+                {t('stroke.cta.learnMore')}
               </button>
             </div>
           </div>
@@ -187,10 +181,8 @@ const StrokeResponse = () => {
       {/* AI Chatbot Section */}
       <section className="chatbot-section section">
         <div className="container">
-          <h2 className="text-center">AI Medical Assistant</h2>
-          <p className="text-center subtitle">
-            Have questions? Our AI-powered chatbot is here to help you 24/7.
-          </p>
+          <h2 className="text-center">{t('stroke.chatbot.title')}</h2>
+          <p className="text-center subtitle">{t('stroke.chatbot.description')}</p>
         </div>
       </section>
 
