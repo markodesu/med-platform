@@ -1,34 +1,36 @@
 import React from 'react';
+import { useLanguage } from '../../contexts/LanguageContext';
 import './Footer.css';
 
 const Footer = () => {
+  const { t } = useLanguage();
   const currentYear = new Date().getFullYear();
 
   return (
     <footer className="app-footer">
       <div className="footer-content">
         <div className="footer-section">
-          <h3>About Us</h3>
-          <p>MediCare Connect is a digital platform dedicated to improving healthcare access and management.</p>
+          <h3>{t('footer.aboutUs')}</h3>
+          <p>{t('footer.aboutDescription')}</p>
         </div>
         <div className="footer-section">
-          <h3>Quick Links</h3>
+          <h3>{t('footer.quickLinks')}</h3>
           <ul>
-            <li><a href="/#features">Features</a></li>
-            <li><a href="/about">About</a></li>
-            <li><a href="/contact">Contact</a></li>
-            <li><a href="/privacy">Privacy Policy</a></li>
-            <li><a href="/terms">Terms of Service</a></li>
+            <li><a href="/#features">{t('navigation.features')}</a></li>
+            <li><a href="/about">{t('navigation.about')}</a></li>
+            <li><a href="/contact">{t('navigation.contact')}</a></li>
+            <li><a href="/privacy">{t('footer.privacy')}</a></li>
+            <li><a href="/terms">{t('footer.terms')}</a></li>
           </ul>
         </div>
         <div className="footer-section">
-          <h3>Contact Us</h3>
+          <h3>{t('footer.contactUs')}</h3>
           <p>Email: info@medicareconnect.com</p>
-          <p>Phone: +1 (555) 123-4567</p>
+          <p>{t('footer.phone')}: +1 (555) 123-4567</p>
         </div>
       </div>
       <div className="footer-bottom">
-        <p>&copy; {currentYear} MediCare Connect. All rights reserved.</p>
+        <p>&copy; {currentYear} {t('app.title')}. {t('footer.rights')}.</p>
       </div>
     </footer>
   );

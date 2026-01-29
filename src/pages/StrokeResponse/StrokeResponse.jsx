@@ -1,4 +1,5 @@
 import React from 'react';
+import Chatbot from '../../components/Chatbot/Chatbot';
 import './StrokeResponse.css';
 
 const StrokeResponse = () => {
@@ -182,6 +183,18 @@ const StrokeResponse = () => {
           </div>
         </div>
       </section>
+
+      {/* AI Chatbot Section */}
+      <section className="chatbot-section section">
+        <div className="container">
+          <h2 className="text-center">AI Medical Assistant</h2>
+          <p className="text-center subtitle">
+            Have questions? Our AI-powered chatbot is here to help you 24/7.
+          </p>
+        </div>
+      </section>
+
+      <Chatbot />
     </div>
   );
 };

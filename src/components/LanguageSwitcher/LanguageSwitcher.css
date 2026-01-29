@@ -1,0 +1,23 @@
+.language-switcher {
+  position: relative;
+}
+
+.language-select {
+  background-color: transparent;
+  color: var(--white);
+  border: 1px solid var(--gray-700);
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.language-select:focus {
+  outline: none;
+  border-color: var(--primary-color);
+}
+
+.language-select option {
+  background-color: #2D3748;
+  color: var(--white);
+}

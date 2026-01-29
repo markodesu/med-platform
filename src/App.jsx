@@ -9,6 +9,7 @@ const About = lazy(() => import('./pages/About/About'));
 const Contact = lazy(() => import('./pages/Contact/Contact'));
 const Features = lazy(() => import('./pages/Features/Features'));
 const NotFound = lazy(() => import('./pages/NotFound/NotFound'));
+const StrokeResponse = lazy(() => import('./pages/StrokeResponse/StrokeResponse'));
 
 // Loading component for Suspense fallback
 const LoadingFallback = () => (
@@ -27,6 +28,7 @@ function App() {
           <Route path="about" element={<About />} />
           <Route path="contact" element={<Contact />} />
           <Route path="features" element={<Features />} />
+          <Route path="stroke-response" element={<StrokeResponse />} />
           <Route path="404" element={<NotFound />} />
           <Route path="*" element={<Navigate to="/404" replace />} />
         </Route>

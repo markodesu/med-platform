@@ -1,15 +1,16 @@
 import React from 'react';
+import { useLanguage } from '../../contexts/LanguageContext';
 import './About.css';
 
 const About = () => {
+  const { t } = useLanguage();
+
   return (
     <div className="about-page">
       <section className="about-hero">
         <div className="container">
-          <h1>About MediCare Connect</h1>
-          <p className="subtitle">
-            Transforming healthcare through technology and innovation
-          </p>
+          <h1>{t('about.heroTitle')}</h1>
+          <p className="subtitle">{t('about.heroSubtitle')}</p>
         </div>
       </section>
 
@@ -17,10 +18,8 @@ const About = () => {
         <div className="container">
           <div className="mission-content">
             <div className="mission-text">
-              <h2>Our Mission</h2>
-              <p>
-                At MediCare Connect, our mission is to make healthcare more accessible, efficient, and patient-centered through innovative digital solutions. We believe that everyone deserves quality healthcare, regardless of their location or circumstances.
-              </p>
+              <h2>{t('about.missionTitle')}</h2>
+              <p>{t('about.missionDescription')}</p>
             </div>
             <div className="mission-image">
               <div className="image-placeholder">
@@ -40,10 +39,8 @@ const About = () => {
 
       <section className="team-section section bg-light">
         <div className="container">
-          <h2 className="text-center">Our Team</h2>
-          <p className="text-center max-w-3xl mx-auto">
-            Meet the dedicated professionals behind MediCare Connect who are working tirelessly to revolutionize healthcare.
-          </p>
+          <h2 className="text-center">{t('about.teamTitle')}</h2>
+          <p className="text-center max-w-3xl mx-auto">{t('about.teamDescription')}</p>
           
           <div className="team-grid">
             {[1, 2, 3, 4].map((member) => (
@@ -56,13 +53,9 @@ const About = () => {
                     </svg>
                   </div>
                 </div>
-                <h3>{`Team Member ${member}`}</h3>
-                <p className="role">
-                  Healthcare Professional
-                </p>
-                <p className="bio">
-                  Passionate about improving healthcare through technology.
-                </p>
+                <h3>{t(`about.team.member${member}.name`)}</h3>
+                <p className="role">{t(`about.team.member${member}.role`)}</p>
+                <p className="bio">{t(`about.team.member${member}.bio`)}</p>
               </div>
             ))}
           </div>
@@ -71,10 +64,8 @@ const About = () => {
 
       <section className="values-section section">
         <div className="container">
-          <h2 className="text-center">Our Values</h2>
-          <p className="text-center max-w-3xl mx-auto mb-12">
-            These principles guide everything we do at MediCare Connect.
-          </p>
+          <h2 className="text-center">{t('about.valuesTitle')}</h2>
+          <p className="text-center max-w-3xl mx-auto mb-12">{t('about.valuesDescription')}</p>
           
           <div className="values-grid">
             {[

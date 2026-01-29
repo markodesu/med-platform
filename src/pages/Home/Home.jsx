@@ -1,18 +1,19 @@
 import React from 'react';
 import Button from '../../components/Button/Button';
+import { useLanguage } from '../../contexts/LanguageContext';
 import './Home.css';
 
 const Home = () => {
+  const { t } = useLanguage();
+
   return (
     <div className="home-page">
       <section className="hero-section">
         <div className="hero-content">
           <div className="hero-text">
-            <h1>Connecting Networks to Facilitate Faster Treatment</h1>
-            <p>
-              The MediCare Connect mobile app, supported by the MediCare Cloud, allows physicians to quickly and securely access, review and share images and patient data across a network, send messages, make calls directly from the app, and flag patients eligible for thrombectomy, all designed to optimize workflow, facilitating faster transfer and treatment decisions.
-            </p>
-            <Button variant="primary" size="large">Request a Demo</Button>
+            <h1>{t('home.heroTitle')}</h1>
+            <p>{t('home.heroDescription')}</p>
+            <Button variant="primary" size="large">{t('home.requestDemo')}</Button>
           </div>
         </div>
         <div className="hero-image-container">

@@ -1,15 +1,16 @@
 import React from 'react';
+import { useLanguage } from '../../contexts/LanguageContext';
 import './Contact.css';
 
 const Contact = () => {
+  const { t } = useLanguage();
+
   return (
     <div className="contact-page">
       <section className="contact-hero">
         <div className="container">
-          <h1>Contact Us</h1>
-          <p className="subtitle">
-            Get in touch with our team for any questions or support
-          </p>
+          <h1>{t('contact.heroTitle')}</h1>
+          <p className="subtitle">{t('contact.heroSubtitle')}</p>
         </div>
       </section>
 
@@ -17,10 +18,8 @@ const Contact = () => {
         <div className="container">
           <div className="contact-grid">
             <div className="contact-info">
-              <h2>Contact Information</h2>
-              <p>
-                Have questions or need assistance? Feel free to reach out to us using the contact form or the information below.
-              </p>
+              <h2>{t('contact.infoTitle')}</h2>
+              <p>{t('contact.infoDescription')}</p>
               
               <div className="info-item">
                 <div className="info-icon">
@@ -29,8 +28,8 @@ const Contact = () => {
                   </svg>
                 </div>
                 <div className="info-text">
-                  <h4>Address</h4>
-                  <p>123 Medical Street, Bishkek, Kyrgyzstan</p>
+                  <h4>{t('contact.address')}</h4>
+                  <p>{t('contact.addressValue')}</p>
                 </div>
               </div>
 
@@ -41,8 +40,8 @@ const Contact = () => {
                   </svg>
                 </div>
                 <div className="info-text">
-                  <h4>Phone</h4>
-                  <p>+996 555 123 456</p>
+                  <h4>{t('contact.phone')}</h4>
+                  <p>{t('contact.phoneValue')}</p>
                 </div>
               </div>
 
@@ -53,61 +52,61 @@ const Contact = () => {
                   </svg>
                 </div>
                 <div className="info-text">
-                  <h4>Email</h4>
-                  <p>info@medicareconnect.kg</p>
+                  <h4>{t('contact.email')}</h4>
+                  <p>{t('contact.emailValue')}</p>
                 </div>
               </div>
             </div>
 
             <div className="contact-form">
-              <h2>Send us a Message</h2>
+              <h2>{t('contact.formTitle')}</h2>
               <form>
                 <div className="form-group">
-                  <label htmlFor="name">Your Name</label>
+                  <label htmlFor="name">{t('contact.form.name')}</label>
                   <input 
                     type="text" 
                     id="name" 
                     name="name" 
-                    placeholder="Enter your name" 
+                    placeholder={t('contact.form.namePlaceholder')}
                     required 
                   />
                 </div>
                 
                 <div className="form-group">
-                  <label htmlFor="email">Email Address</label>
+                  <label htmlFor="email">{t('contact.form.email')}</label>
                   <input 
                     type="email" 
                     id="email" 
                     name="email" 
-                    placeholder="Enter your email" 
+                    placeholder={t('contact.form.emailPlaceholder')}
                     required 
                   />
                 </div>
                 
                 <div className="form-group">
-                  <label htmlFor="subject">Subject</label>
+                  <label htmlFor="subject">{t('contact.form.subject')}</label>
                   <input 
                     type="text" 
                     id="subject" 
                     name="subject" 
-                    placeholder="Enter subject" 
+                    placeholder={t('contact.form.subjectPlaceholder')}
                     required 
                   />
                 </div>
                 
                 <div className="form-group">
-                  <label htmlFor="message">Your Message</label>
+                  <label htmlFor="message">{t('contact.form.message')}</label>
                   <textarea 
                     id="message" 
                     name="message" 
                     rows="5" 
-                    placeholder="Type your message here..." 
+                    placeholder={t('contact.form.messagePlaceholder')}
                     required
                   ></textarea>
                 </div>
                 
                 <button type="submit" className="btn btn-primary">
-                  Send Message
+                  {t('contact.form.submit')}
                 </button>
               </form>
             </div>
